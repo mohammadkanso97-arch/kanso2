@@ -11,6 +11,48 @@
   "name": "t:sections.header-group.name",
   "type": "header",
   "sections": {
+    "176678397114f5574e": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_5543cf8_JEeWR4": {
+          "type": "ai_gen_block_5543cf8",
+          "settings": {
+            "message_1": "<p>Welkom bij Avaraya — Stijlvolle fashion aan je deur!</p>",
+            "message_2": "<p>Gratis levering in heel Nederland!</p>",
+            "message_3": "",
+            "message_4": "",
+            "message_5": "",
+            "separator": "•",
+            "separator_spacing": 30,
+            "separator_size": 16,
+            "separator_color": "#ffffff",
+            "enable_scroll": true,
+            "scroll_speed": 20,
+            "pause_on_hover": true,
+            "bar_height": 45,
+            "mobile_bar_height": 40,
+            "item_spacing": 20,
+            "font_size": 14,
+            "mobile_font_size": 12,
+            "font_weight": "400",
+            "letter_spacing": 0,
+            "text_transform": "none",
+            "background_color": "#1a1b18",
+            "text_color": "#ffffff",
+            "link_color": "#ffffff",
+            "link_hover_color": "#d2d5d9",
+            "link_underline": false,
+            "enable_gradient": true,
+            "gradient_width": 50
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_5543cf8_JEeWR4"
+      ],
+      "settings": {}
+    },
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
@@ -92,6 +134,7 @@
     }
   },
   "order": [
+    "176678397114f5574e",
     "announcement-bar",
     "header"
   ]
