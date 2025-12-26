@@ -1,6 +1,492 @@
+{% doc %}
+  @prompt
+    ANNOUNCEMENT BAR SCROLLING WITH FULL CONTROL
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-announcement-bar-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    background-color: {{ block.settings.background_color }};
+    color: {{ block.settings.text_color }};
+    overflow: hidden;
+    position: relative;
+  }
+
+  .ai-announcement-bar__wrapper-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    height: {{ block.settings.bar_height }}px;
+    position: relative;
+  }
+
+  .ai-announcement-bar__track-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    will-change: transform;
+  }
+
+  .ai-announcement-bar__track-{{ ai_gen_id }}.paused {
+    animation-play-state: paused;
+  }
+
+  .ai-announcement-bar__item-{{ ai_gen_id }} {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 {{ block.settings.item_spacing }}px;
+    font-size: {{ block.settings.font_size }}px;
+    font-weight: {{ block.settings.font_weight }};
+    letter-spacing: {{ block.settings.letter_spacing }}px;
+  }
+
+  {% if block.settings.text_transform == 'uppercase' %}
+    .ai-announcement-bar__item-{{ ai_gen_id }} {
+      text-transform: uppercase;
+    }
+  {% elsif block.settings.text_transform == 'capitalize' %}
+    .ai-announcement-bar__item-{{ ai_gen_id }} {
+      text-transform: capitalize;
+    }
+  {% endif %}
+
+  .ai-announcement-bar__item-{{ ai_gen_id }} a {
+    color: {{ block.settings.link_color }};
+    text-decoration: {% if block.settings.link_underline %}underline{% else %}none{% endif %};
+  }
+
+  .ai-announcement-bar__item-{{ ai_gen_id }} a:hover {
+    color: {{ block.settings.link_hover_color }};
+  }
+
+  .ai-announcement-bar__separator-{{ ai_gen_id }} {
+    display: inline-block;
+    margin: 0 {{ block.settings.separator_spacing }}px;
+    color: {{ block.settings.separator_color }};
+    font-size: {{ block.settings.separator_size }}px;
+  }
+
+  @keyframes ai-scroll-{{ ai_gen_id }} {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .ai-announcement-bar__track-{{ ai_gen_id }}.scrolling {
+    animation: ai-scroll-{{ ai_gen_id }} {{ block.settings.scroll_speed }}s linear infinite;
+  }
+
+  {% if block.settings.enable_gradient %}
+    .ai-announcement-bar-{{ ai_gen_id }}::before,
+    .ai-announcement-bar-{{ ai_gen_id }}::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: {{ block.settings.gradient_width }}px;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .ai-announcement-bar-{{ ai_gen_id }}::before {
+      left: 0;
+      background: linear-gradient(to right, {{ block.settings.background_color }}, transparent);
+    }
+
+    .ai-announcement-bar-{{ ai_gen_id }}::after {
+      right: 0;
+      background: linear-gradient(to left, {{ block.settings.background_color }}, transparent);
+    }
+  {% endif %}
+
+  @media screen and (max-width: 749px) {
+    .ai-announcement-bar__wrapper-{{ ai_gen_id }} {
+      height: {{ block.settings.mobile_bar_height }}px;
+    }
+
+    .ai-announcement-bar__item-{{ ai_gen_id }} {
+      font-size: {{ block.settings.mobile_font_size }}px;
+    }
+  }
+{% endstyle %}
+
+<announcement-bar-{{ ai_gen_id }}
+  class="ai-announcement-bar-{{ ai_gen_id }}"
+  data-scroll-speed="{{ block.settings.scroll_speed }}"
+  data-pause-on-hover="{{ block.settings.pause_on_hover }}"
+  data-enable-scroll="{{ block.settings.enable_scroll }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-announcement-bar__wrapper-{{ ai_gen_id }}">
+    <div class="ai-announcement-bar__track-{{ ai_gen_id }}">
+      {% for i in (1..2) %}
+        {% if block.settings.message_1 != blank %}
+          <div class="ai-announcement-bar__item-{{ ai_gen_id }}">
+            {{ block.settings.message_1 }}
+          </div>
+          {% if block.settings.separator != blank %}
+            <span class="ai-announcement-bar__separator-{{ ai_gen_id }}">{{ block.settings.separator }}</span>
+          {% endif %}
+        {% endif %}
+
+        {% if block.settings.message_2 != blank %}
+          <div class="ai-announcement-bar__item-{{ ai_gen_id }}">
+            {{ block.settings.message_2 }}
+          </div>
+          {% if block.settings.separator != blank %}
+            <span class="ai-announcement-bar__separator-{{ ai_gen_id }}">{{ block.settings.separator }}</span>
+          {% endif %}
+        {% endif %}
+
+        {% if block.settings.message_3 != blank %}
+          <div class="ai-announcement-bar__item-{{ ai_gen_id }}">
+            {{ block.settings.message_3 }}
+          </div>
+          {% if block.settings.separator != blank %}
+            <span class="ai-announcement-bar__separator-{{ ai_gen_id }}">{{ block.settings.separator }}</span>
+          {% endif %}
+        {% endif %}
+
+        {% if block.settings.message_4 != blank %}
+          <div class="ai-announcement-bar__item-{{ ai_gen_id }}">
+            {{ block.settings.message_4 }}
+          </div>
+          {% if block.settings.separator != blank %}
+            <span class="ai-announcement-bar__separator-{{ ai_gen_id }}">{{ block.settings.separator }}</span>
+          {% endif %}
+        {% endif %}
+
+        {% if block.settings.message_5 != blank %}
+          <div class="ai-announcement-bar__item-{{ ai_gen_id }}">
+            {{ block.settings.message_5 }}
+          </div>
+          {% if block.settings.separator != blank and i == 1 %}
+            <span class="ai-announcement-bar__separator-{{ ai_gen_id }}">{{ block.settings.separator }}</span>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</announcement-bar-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class AnnouncementBar{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.track = this.querySelector('.ai-announcement-bar__track-{{ ai_gen_id }}');
+        this.scrollSpeed = parseFloat(this.dataset.scrollSpeed);
+        this.pauseOnHover = this.dataset.pauseOnHover === 'true';
+        this.enableScroll = this.dataset.enableScroll === 'true';
+      }
+
+      connectedCallback() {
+        if (this.enableScroll) {
+          this.initScroll();
+        }
+
+        if (this.pauseOnHover) {
+          this.setupHoverPause();
+        }
+      }
+
+      initScroll() {
+        this.track.classList.add('scrolling');
+      }
+
+      setupHoverPause() {
+        this.addEventListener('mouseenter', () => {
+          this.track.classList.add('paused');
+        });
+
+        this.addEventListener('mouseleave', () => {
+          this.track.classList.remove('paused');
+        });
+      }
+    }
+
+    customElements.define('announcement-bar-{{ ai_gen_id }}', AnnouncementBar{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Announcement bar",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Messages"
+    },
+    {
+      "type": "richtext",
+      "id": "message_1",
+      "label": "Message 1",
+      "default": "<p>Free shipping on orders over $50</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "message_2",
+      "label": "Message 2",
+      "default": "<p>Shop now and save 20%</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "message_3",
+      "label": "Message 3",
+      "default": "<p>New arrivals every week</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "message_4",
+      "label": "Message 4"
+    },
+    {
+      "type": "richtext",
+      "id": "message_5",
+      "label": "Message 5"
+    },
+    {
+      "type": "header",
+      "content": "Separator"
+    },
+    {
+      "type": "text",
+      "id": "separator",
+      "label": "Separator symbol",
+      "default": "•"
+    },
+    {
+      "type": "range",
+      "id": "separator_spacing",
+      "min": 10,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Separator spacing",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "separator_size",
+      "min": 8,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "label": "Separator size",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "separator_color",
+      "label": "Separator color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Scroll behavior"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_scroll",
+      "label": "Enable scrolling",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "scroll_speed",
+      "min": 5,
+      "max": 60,
+      "step": 5,
+      "unit": "s",
+      "label": "Scroll speed",
+      "default": 20
+    },
+    {
+      "type": "checkbox",
+      "id": "pause_on_hover",
+      "label": "Pause on hover",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "bar_height",
+      "min": 30,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Bar height",
+      "default": 45
+    },
+    {
+      "type": "range",
+      "id": "mobile_bar_height",
+      "min": 30,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "label": "Mobile bar height",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "item_spacing",
+      "min": 10,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Item spacing",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "range",
+      "id": "font_size",
+      "min": 10,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "mobile_font_size",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Mobile font size",
+      "default": 12
+    },
+    {
+      "type": "select",
+      "id": "font_weight",
+      "label": "Font weight",
+      "options": [
+        {
+          "value": "300",
+          "label": "Light"
+        },
+        {
+          "value": "400",
+          "label": "Normal"
+        },
+        {
+          "value": "500",
+          "label": "Medium"
+        },
+        {
+          "value": "600",
+          "label": "Semi-bold"
+        },
+        {
+          "value": "700",
+          "label": "Bold"
+        }
+      ],
+      "default": "400"
+    },
+    {
+      "type": "range",
+      "id": "letter_spacing",
+      "min": 0,
+      "max": 5,
+      "step": 0.5,
+      "unit": "px",
+      "label": "Letter spacing",
+      "default": 0
+    },
+    {
+      "type": "select",
+      "id": "text_transform",
+      "label": "Text transform",
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "uppercase",
+          "label": "Uppercase"
+        },
+        {
+          "value": "capitalize",
+          "label": "Capitalize"
+        }
+      ],
+      "default": "none"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#1a1b18"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "link_color",
+      "label": "Link",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "link_hover_color",
+      "label": "Link hover",
+      "default": "#d2d5d9"
+    },
+    {
+      "type": "checkbox",
+      "id": "link_underline",
+      "label": "Underline links",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Edge gradient"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_gradient",
+      "label": "Enable edge fade",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "gradient_width",
+      "min": 20,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "label": "Fade width",
+      "default": 50
+    }
+  ],
+  "presets": [
+    {
+      "name": "Announcement bar"
+    }
+  ]
+}
 {% endschema %}
