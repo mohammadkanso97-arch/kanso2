@@ -234,11 +234,24 @@
             "title_size": "h3",
             "text": "<p>Geen verrassingen bij het afrekenen. Bij Avaraya profiteer je altijd van gratis verzending</p>"
           }
+        },
+        "guarantee_DgC6F9": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "link",
+            "icon_size": "medium",
+            "image": "shopify://shop_images/Screenshot_2025-12-27_003731.png",
+            "custom_icon": "",
+            "title": "Snelle klantenservice",
+            "title_size": "h3",
+            "text": "<p>Heb je een vraag of hulp nodig? Ons team staat voor je klaar en reageert meestal binnen 24 uur.<br/><br/></p>"
+          }
         }
       },
       "block_order": [
         "guarantee_B4Rf6c",
-        "guarantee_XgLtnX"
+        "guarantee_XgLtnX",
+        "guarantee_DgC6F9"
       ],
       "name": "t:sections.guarantees.presets.name",
       "settings": {
