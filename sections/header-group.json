@@ -14,17 +14,27 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "announcement_gDMw9m": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welkom bij Avaraya — Stijlvolle fashion aan je deur!",
+            "text_on_mobile": "Welkom bij Avaraya — Stijlvolle fashion aan je deur!",
+            "text_size": 10,
+            "link": ""
+          }
+        },
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
             "text": "Gratis levering in heel Nederland!",
             "text_on_mobile": "Gratis levering in heel Nederland!",
-            "text_size": 15,
+            "text_size": 10,
             "link": ""
           }
         }
       },
       "block_order": [
+        "announcement_gDMw9m",
         "announcement-bar-0"
       ],
       "settings": {
