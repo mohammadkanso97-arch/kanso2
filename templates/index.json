@@ -12,11 +12,11 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
-        "image_DV47pH": {
+        "image_qKUiQz": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_Dec_26_2025_03_24_28_PM.png",
-            "image_mobile": "shopify://shop_images/ChatGPT_Image_Dec_26_2025_03_24_28_PM.png",
+            "image": "shopify://shop_images/ChatGPT_Image_Dec_26_2025_03_46_02_PM.png",
+            "image_mobile": "shopify://shop_images/ChatGPT_Image_Dec_26_2025_03_46_02_PM.png",
             "image_position": "center center",
             "text_box_position": "middle-center",
             "subheading": "",
@@ -31,9 +31,30 @@
             "button_size": "medium",
             "button_style_secondary": false
           }
+        },
+        "image_DV47pH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_Dec_26_2025_03_24_28_PM.png",
+            "image_mobile": "shopify://shop_images/ChatGPT_Image_Dec_26_2025_03_24_28_PM.png",
+            "image_position": "center center",
+            "text_box_position": "middle-center",
+            "subheading": "",
+            "subheading_size": "h5",
+            "heading": "Stijl die je elke dag draagt",
+            "heading_size": "h1",
+            "heading_tag": "h2",
+            "text": "Tijdloze items die je makkelijk combineert, elke dag opnieuw",
+            "text_size": "typeset",
+            "button_label": "Button label",
+            "button_link": "",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
         }
       },
       "block_order": [
+        "image_qKUiQz",
         "image_DV47pH"
       ],
       "settings": {
@@ -56,17 +77,6 @@
         "colors_navigation_text": "#ffffff",
         "colors_navigation_background": "#1a1b18",
         "padding_top": 0,
-        "padding_bottom": 36
-      }
-    },
-    "custom_liquid_4hPdFp": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom-liquid.presets.name",
-      "settings": {
-        "custom_liquid": "",
-        "full_width": false,
-        "show_divider": false,
-        "padding_top": 36,
         "padding_bottom": 36
       }
     },
@@ -103,7 +113,6 @@
   },
   "order": [
     "slideshow",
-    "custom_liquid_4hPdFp",
     "featured_collection_cJy3BM"
   ]
 }
