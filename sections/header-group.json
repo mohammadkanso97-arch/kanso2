@@ -17,8 +17,8 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "",
-            "text_on_mobile": "",
+            "text": "Gratis levering in heel Nederland!",
+            "text_on_mobile": "Gratis levering in heel Nederland!",
             "text_size": 15,
             "link": ""
           }
