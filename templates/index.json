@@ -12,28 +12,11 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
-        "slide-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/model-with-leather-jacket-over-shoulders.jpg",
-            "image_position": "center center",
-            "text_box_position": "bottom-left",
-            "subheading": "mohmad",
-            "subheading_size": "h5",
-            "heading": "FEEL THE WARMTH",
-            "heading_size": "h0",
-            "heading_tag": "h2",
-            "text": "",
-            "text_size": "typeset2",
-            "button_label": "Shop Now",
-            "button_link": "shopify://collections/all",
-            "button_size": "medium",
-            "button_style_secondary": false
-          }
-        },
         "image_DV47pH": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_Dec_26_2025_03_24_28_PM.png",
+            "image_mobile": "shopify://shop_images/ChatGPT_Image_Dec_26_2025_03_24_28_PM.png",
             "image_position": "center center",
             "text_box_position": "middle-center",
             "subheading": "",
@@ -51,7 +34,6 @@
         }
       },
       "block_order": [
-        "slide-0",
         "image_DV47pH"
       ],
       "settings": {
@@ -63,7 +45,7 @@
         "full_width": true,
         "image_behavior": "none",
         "mobile_text_alignment": "left",
-        "mobile_image_ratio": "300px",
+        "mobile_image_ratio": "400px",
         "show_text_below": false,
         "colors_button_label": "#ffffff",
         "colors_button_background": "#1a1b18",
