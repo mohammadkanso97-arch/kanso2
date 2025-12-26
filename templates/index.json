@@ -217,10 +217,10 @@
             "icon": "shop",
             "icon_size": "medium",
             "image": "shopify://shop_images/Screenshot_2025-12-27_002013.png",
-            "custom_icon": "We kiezen elk product met zorg, met focus op kwaliteit en comfort. Gemaakt om dagelijks te dragen en lang mee te gaan",
+            "custom_icon": "",
             "title": "Guarantee",
             "title_size": "h3",
-            "text": "<p>Welcome to our store.</p>"
+            "text": "<p>We kiezen elk product met zorg, met focus op kwaliteit en comfort. Gemaakt om dagelijks te dragen en lang mee te gaan</p>"
           }
         },
         "guarantee_XgLtnX": {
@@ -229,10 +229,10 @@
             "icon": "truck",
             "icon_size": "medium",
             "image": "shopify://shop_images/Screenshot_2025-12-27_002439.png",
-            "custom_icon": "Geen verrassingen bij het afrekenen. Bij Avaraya profiteer je altijd van gratis verzending",
+            "custom_icon": "",
             "title": "FREE SHIPPING",
             "title_size": "h3",
-            "text": "<p>Welcome to our store.</p>"
+            "text": "<p>Geen verrassingen bij het afrekenen. Bij Avaraya profiteer je altijd van gratis verzending</p>"
           }
         }
       },
