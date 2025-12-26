@@ -207,12 +207,67 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "guarantees_zqJ7Jx": {
+      "type": "guarantees",
+      "blocks": {
+        "guarantee_B4Rf6c": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "shop",
+            "icon_size": "medium",
+            "image": "shopify://shop_images/Screenshot_2025-12-27_002013.png",
+            "custom_icon": "We kiezen elk product met zorg, met focus op kwaliteit en comfort. Gemaakt om dagelijks te dragen en lang mee te gaan",
+            "title": "Guarantee",
+            "title_size": "h3",
+            "text": "<p>Welcome to our store.</p>"
+          }
+        },
+        "guarantee_XgLtnX": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "truck",
+            "icon_size": "medium",
+            "image": "shopify://shop_images/Screenshot_2025-12-27_002439.png",
+            "custom_icon": "Geen verrassingen bij het afrekenen. Bij Avaraya profiteer je altijd van gratis verzending",
+            "title": "FREE SHIPPING",
+            "title_size": "h3",
+            "text": "<p>Welcome to our store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "guarantee_B4Rf6c",
+        "guarantee_XgLtnX"
+      ],
+      "name": "t:sections.guarantees.presets.name",
+      "settings": {
+        "layout": "default",
+        "column_alignment": "left",
+        "horizontal_content": false,
+        "full_width": false,
+        "show_divider": false,
+        "columns_desktop": 4,
+        "heading": "Guarantees",
+        "heading_size": "h1",
+        "heading_tag": "h2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "use_custom_colors": false,
+        "colors_icon": "#ffffff",
+        "colors_text": "#1a1b18",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "slideshow",
     "featured_collection_cJy3BM",
     "rich_text_3khAPh",
-    "image_comparison_UqcJHW"
+    "image_comparison_UqcJHW",
+    "guarantees_zqJ7Jx"
   ]
 }
