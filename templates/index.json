@@ -215,10 +215,10 @@
           "type": "guarantee",
           "settings": {
             "icon": "shop",
-            "icon_size": "medium",
+            "icon_size": "large",
             "image": "shopify://shop_images/Screenshot_2025-12-27_002013.png",
             "custom_icon": "",
-            "title": "Guarantee",
+            "title": "Garantie",
             "title_size": "h3",
             "text": "<p>We kiezen elk product met zorg, met focus op kwaliteit en comfort. Gemaakt om dagelijks te dragen en lang mee te gaan</p>"
           }
@@ -230,7 +230,7 @@
             "icon_size": "medium",
             "image": "shopify://shop_images/Screenshot_2025-12-27_002439.png",
             "custom_icon": "",
-            "title": "FREE SHIPPING",
+            "title": "Gratis verzending",
             "title_size": "h3",
             "text": "<p>Geen verrassingen bij het afrekenen. Bij Avaraya profiteer je altijd van gratis verzending</p>"
           }
