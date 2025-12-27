@@ -150,7 +150,20 @@
     },
     "slider": {
       "of": "van",
-      "next_slide": "Schuif naar rechts"
+      "next_slide": "Schuif naar rechts",
+      "previous_slide": "Schuif naar links"
+    },
+    "date": {
+      "day": "Dag",
+      "days": "Dagen",
+      "hour": "Uur",
+      "hours": "Uren",
+      "minutes": "Minuten",
+      "seconds": "Secties"
+    },
+    "breadcrumbs": {
+      "home": "Thuis",
+      "home_link_title": "Terug naar de homepage"
     }
   },
   "products": {
@@ -161,7 +174,70 @@
       "include_taxes": "Inclusief btw.",
       "shipping_policy_html": "<a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">Verzendkosten</a> worden berekend bij het afrekenen.",
       "choose_options": "Kies opties",
-      "choose_product_options": "Kies opties voor {{ product_name }}"
+      "choose_product_options": "Kies opties voor {{ product_name }}",
+      "color_swatch_trigger": "Kleur",
+      "size_chart_trigger": "Maat",
+      "size_chart": "Hulp bij het bepalen van uw maat",
+      "add_to_cart": "Voeg toe aan winkelwagen",
+      "add_set_to_cart": "Voeg de set toe aan je winkelmandje",
+      "description": "Beschrijving",
+      "quick_view": "Snel overzicht",
+      "on_sale": "Verkoop",
+      "product_variants": "Productvarianten",
+      "media": {
+        "gallery_viewer": "Galerijviewer",
+        "load_image": "Laad afbeelding {{ index }} in de galerijweergave",
+        "load_model": "Laad het 3D-model {{ index }} in de galerijweergave",
+        "load_video": "Speel video {{ index }} af in galerijweergave",
+        "image_available": "Afbeelding {{ index }} is nu beschikbaar in de galerijweergave.",
+        "open_media": "Open media {{ index }} in modal",
+        "play_model": "Speel 3D Viewer af",
+        "play_video": "Video afspelen"
+      },
+      "quantity": {
+        "label": "Hoeveelheid",
+        "input_label": "Aantal voor {{ product }}",
+        "increase": "Verhoog de hoeveelheid voor {{ product }}",
+        "decrease": "Verminder de hoeveelheid voor {{ product }}",
+        "minimum_of": "Minimum van {{ quantity }}",
+        "maximum_of": "Maximum van {{ quantity }}",
+        "multiples_of": "Toenames van {{ quantity }}",
+        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}</span> in winkelwagen"
+      },
+      "pickup_availability": {
+        "view_store_info": "Bekijk winkelinformatie",
+        "check_other_stores": "Controleer de beschikbaarheid bij andere winkels.",
+        "pick_up_available": "Afhalen mogelijk",
+        "pick_up_available_at_html": "Afhalen mogelijk op <span class=\"color-foreground\">{{ location_name }}</span>",
+        "pick_up_unavailable_at_html": "Ophalen is momenteel niet mogelijk op <span class=\"color-foreground\">{{ location_name }}</span>",
+        "unavailable": "Ophaalbeschikbaarheid kon niet worden geladen.",
+        "refresh": "Vernieuwen"
+      },
+      "price": {
+        "from_price_html": "Vanaf {{ price }}",
+        "regular_price": "Normale prijs",
+        "sale_price": "Verkoopprijs",
+        "unit_price": "Eenheidsprijs"
+      },
+      "inventory": {
+        "in_stock_label": "Op voorraad, klaar voor verzending.",
+        "stock_label_html": {
+          "one": "Wees er snel bij, er is nog maar <strong>{{ count }}</strong> artikel op voorraad!",
+          "other": "Wees er snel bij, er zijn nog maar <strong>{{ count }}</strong> artikelen op voorraad!"
+        },
+        "will_not_ship_until": "Klaar voor verzending {{ date }}",
+        "will_be_in_stock_after": "Weer op voorraad {{ date }}",
+        "waiting_for_stock": "Voorraad onderweg"
+      },
+      "share": "Deel dit product",
+      "view": "Bekijk product",
+      "sold_out": "Uitverkocht",
+      "unavailable": "Niet beschikbaar",
+      "pre_order": "Voorbestellen",
+      "vendor": "Leverancier",
+      "video_exit_message": "{{ title }} opent de video op volledig scherm in hetzelfde venster.",
+      "view_full_details": "Bekijk alle details",
+      "view_info": "Meer informatie"
     },
     "modal": {
       "label": "Mediagalerij"
@@ -391,5 +467,56 @@
       "send_on": "JJJJ-MM-DD",
       "send_on_label": "Doorsturen (optioneel)"
     }
+  },
+  "date_formats": {
+    "month_year": "%DOOR"
+  },
+  "newsletter": {
+    "label": "Voer hier uw e-mailadres in.",
+    "success": "Bedankt voor je abonnement!",
+    "button_label": "Abonneren"
+  },
+  "accessibility": {
+    "skip_to_text": "Ga direct naar de inhoud",
+    "skip_to_product_info": "Ga direct naar de productinformatie",
+    "close": "Dichtbij",
+    "vendor": "Leverancier:",
+    "error": "Fout",
+    "refresh_page": "Door een selectie te maken, wordt de hele pagina vernieuwd.",
+    "link_messages": {
+      "new_window": "Opent in een nieuw venster.",
+      "external": "Opent een externe website."
+    },
+    "loading": "Laden...",
+    "total_reviews": "totaal aantal beoordelingen",
+    "star_reviews_info": "{{ rating_value }} van de {{ rating_max }} sterren",
+    "collapsible_content_title": "Inklapbare inhoud",
+    "complementary_products": "Aanvullende producten"
+  },
+  "blogs": {
+    "article": {
+      "all_tags": "Alle",
+      "read_more_title": "Lees meer: {{ title }}",
+      "read_more": "Lees meer",
+      "comments": {
+        "one": "{{ count }} reactie",
+        "other": "{{ count }} reacties"
+      },
+      "moderated": "Let op: reacties moeten eerst worden goedgekeurd voordat ze worden gepubliceerd.",
+      "comment_form_title": "Laat een reactie achter",
+      "name": "Naam",
+      "email": "E-mail",
+      "message": "Opmerking",
+      "post": "Plaats een reactie",
+      "back_to_blog": "Terug naar {{ title }}",
+      "share": "Deel dit artikel",
+      "success": "Je reactie is succesvol geplaatst! Dankjewel!",
+      "success_moderated": "Je reactie is succesvol geplaatst. We publiceren hem binnenkort, aangezien onze blog momenteel wordt gemodereerd."
+    }
+  },
+  "onboarding": {
+    "product_title": "Voorbeeld producttitel",
+    "collection_title": "De naam van uw collectie",
+    "no_content": "Deze sectie bevat momenteel geen inhoud. Voeg inhoud toe aan deze sectie via de zijbalk."
   }
 }
