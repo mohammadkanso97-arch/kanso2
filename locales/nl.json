@@ -7,4 +7,150 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-{}
+{
+  "shopify": {
+    "checkout": {
+      "thank_you": {
+        "checkout_again": "Opnieuw afrekenen"
+      },
+      "required_extensions": {
+        "errors": {
+          "interaction_required": "Een extensie-interactie is vereist om de afrekening te voltooien."
+        }
+      }
+    }
+  },
+  "sections": {
+    "header": {
+      "announcement": "Aankondiging",
+      "cart_count": {
+        "one": "{{ count }} item",
+        "other": "{{ count }} items"
+      }
+    },
+    "cart": {
+      "title": "Winkelwagen",
+      "caption": "Winkelwagenartikelen",
+      "remove_title": "Verwijder {{ title }}",
+      "subtotal": "Subtotaal",
+      "new_subtotal": "Nieuw subtotaal",
+      "note": "Voeg een notitie toe aan je bestelling.",
+      "note_placeholder": "Hoe kunnen we u helpen?",
+      "checkout": "Uitchecken",
+      "empty": "Je winkelwagen is momenteel leeg.",
+      "cart_error": "Er is een fout opgetreden tijdens het bijwerken van uw winkelwagen. Probeer het opnieuw.",
+      "cart_quantity_error_html": "Je kunt slechts {{ quantity }} van dit artikel aan je winkelwagen toevoegen.",
+      "taxes_and_shipping_policy_at_checkout_html": "Belastingen en <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">verzendkosten</a> worden berekend bij het afrekenen.",
+      "taxes_included_but_shipping_at_checkout": "Inclusief btw en verzendkosten berekend bij het afrekenen.",
+      "taxes_included_and_shipping_policy_html": "Inclusief btw. <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">Verzendkosten</a> worden berekend bij het afrekenen.",
+      "taxes_and_shipping_at_checkout": "Belastingen en verzendkosten worden berekend bij het afrekenen.",
+      "headings": {
+        "price": "Prijs",
+        "total": "Totaal",
+        "quantity": "Hoeveelheid"
+      },
+      "gift_wrapping_html": "Voor {{ price }} dient u de producten in deze bestelling in te pakken.",
+      "gift_note_placeholder": "Cadeauboodschap (gratis en optioneel)"
+    },
+    "footer": {
+      "social_placeholder": "Volg ons op sociale media!",
+      "payment": "Betaalmethoden"
+    },
+    "featured_blog": {
+      "view_all": "Alles bekijken",
+      "onboarding_title": "Blogbericht",
+      "onboarding_content": "Geef je klanten een samenvatting van je blogbericht."
+    },
+    "featured_collection": {
+      "view_all": "Alles bekijken",
+      "view_all_label": "Bekijk alle producten in de {{ collection_name }} collectie"
+    },
+    "collection_list": {
+      "view_all": "Alles bekijken"
+    },
+    "collection_template": {
+      "title": "Verzameling",
+      "no_products": "Sorry, er zijn geen producten in deze collectie.",
+      "empty": "Geen producten gevonden",
+      "use_fewer_filters_html": "Gebruik minder filters of <a class=\"&lt;span class='notranslate'&gt;{{ class }}&lt;/span&gt;\" href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">wis ze allemaal.</a>"
+    },
+    "video": {
+      "load_video": "Video laden: {{ description }}"
+    }
+  },
+  "general": {
+    "password_page": {
+      "login_form_heading": "Ga naar de winkel met wachtwoord:",
+      "login_password_button": "Inloggen met wachtwoord",
+      "login_form_password_label": "Wachtwoord",
+      "login_form_password_placeholder": "Uw wachtwoord",
+      "login_form_error": "Foutief wachtwoord!",
+      "login_form_submit": "Binnenkomen",
+      "modal": "Wachtwoordvenster",
+      "admin_link_html": "Bent u de winkeleigenaar? <a href=\"/admin\" class=\"link link--underline\">Log hier in.</a>",
+      "powered_by_shopify_html": "Deze webshop wordt mogelijk gemaakt door {{ shopify }}"
+    },
+    "social": {
+      "alt_text": {
+        "share_on_facebook": "Deel",
+        "share_on_pinterest": "Speld het vast",
+        "share_on_whatsapp": "Deel",
+        "share_on_telegram": "Deel",
+        "share_by_email": "E-mail"
+      }
+    },
+    "continue_shopping": "Terug naar de winkel",
+    "pagination": {
+      "label": "Paginering",
+      "page": "Pagina {{ number }}",
+      "next": "Volgende &gt;",
+      "previous": "‹ Vorige",
+      "show_more": "Meer weergeven"
+    },
+    "search": {
+      "search": "Doorzoek onze website.",
+      "placeholder": "Zoekopdracht",
+      "clear": "Duidelijk"
+    },
+    "cart": {
+      "view": "Winkelwagen bekijken",
+      "item_added": "Artikel toegevoegd aan je winkelwagen",
+      "note": {
+        "title": "Opmerking",
+        "caption": "Speciale instructies voor de bestelling",
+        "button": "Toepassen"
+      },
+      "gift_note": {
+        "title": "Bericht",
+        "caption": "Voeg een persoonlijk bericht toe aan je bestelling.",
+        "button": "Toepassen"
+      },
+      "discount": {
+        "caption": "Voeg een kortingscode toe",
+        "tooltip": "De korting wordt automatisch verrekend bij het afrekenen.",
+        "button": "Toepassen"
+      },
+      "shipping_calculator": {
+        "title": "Verzenden",
+        "caption": "Verzendkosten schatten",
+        "tooltip": "Verzendkosten en belastingen worden berekend bij het afrekenen.",
+        "button": "Berekenen"
+      },
+      "free_shipping": {
+        "remaining_html": "Besteed nog {{ remaining_amount }} om in aanmerking te komen voor gratis verzending.",
+        "congratulations_html": "Je komt in aanmerking voor gratis verzending."
+      }
+    },
+    "share": {
+      "share": "Deel nu",
+      "close": "Delen sluiten",
+      "copy_to_clipboard": "Kopieer link",
+      "share_url": "Kopieer link",
+      "success_message": "Link gekopieerd naar het klembord!"
+    },
+    "slider": {
+      "of": "van",
+      "next_slide": "Schuif naar rechts"
+    }
+  }
+}
