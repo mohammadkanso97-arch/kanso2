@@ -11,15 +11,16 @@
   "name": "t:sections.header-group.name",
   "type": "header",
   "sections": {
-    "176678397114f5574e": {
+    "blocks_NeAGfb": {
       "type": "_blocks",
       "blocks": {
-        "ai_gen_block_5543cf8_JEeWR4": {
+        "ai_gen_block_5543cf8_LQY79r": {
           "type": "ai_gen_block_5543cf8",
+          "name": "Announcement bar",
           "settings": {
-            "message_1": "<h5>Bienvenue chez ÉLVARO — la mode qui arrive chez vous<br/><br/></h5>",
-            "message_2": "<h6>Livraison gratuite dans toute l’Europe.<br/></h6>",
-            "message_3": "",
+            "message_1": "<p>Free shipping on orders over $50</p>",
+            "message_2": "<p>Shop now and save 20%</p>",
+            "message_3": "<p>New arrivals every week</p>",
             "message_4": "",
             "message_5": "",
             "separator": "•",
@@ -49,8 +50,9 @@
         }
       },
       "block_order": [
-        "ai_gen_block_5543cf8_JEeWR4"
+        "ai_gen_block_5543cf8_LQY79r"
       ],
+      "name": "Announcement bar",
       "settings": {}
     },
     "announcement-bar": {
@@ -111,7 +113,7 @@
     }
   },
   "order": [
-    "176678397114f5574e",
+    "blocks_NeAGfb",
     "announcement-bar",
     "header"
   ]
