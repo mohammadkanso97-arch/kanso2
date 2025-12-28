@@ -80,32 +80,49 @@
         "padding_bottom": 36
       }
     },
-    "featured_collection_cJy3BM": {
-      "type": "featured-collection",
-      "name": "t:sections.featured-collection.presets.name",
+    "collection_list_3KyC47": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_6JrWet": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "dames",
+            "image_position": "center center"
+          }
+        },
+        "featured_collection_CHPD4p": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "image_position": "center center"
+          }
+        },
+        "featured_collection_Dge6tE": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "image_position": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_6JrWet",
+        "featured_collection_CHPD4p",
+        "featured_collection_Dge6tE"
+      ],
+      "name": "t:sections.collection-list.presets.name",
       "settings": {
-        "collection": "",
-        "products_to_show": 4,
-        "horizontal_scroll": false,
-        "show_view_all": true,
+        "show_view_all": false,
         "show_divider": false,
-        "heading": "Collection d’hiver",
+        "columns_desktop": 3,
+        "heading": "Collections",
         "heading_size": "h1",
         "heading_alignment": "left",
         "heading_tag": "h2",
         "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "image_ratio": "adapt",
-        "image_position": "center center",
-        "enable_image_fill": true,
-        "show_secondary_image": false,
-        "secondary_image_max": 1,
-        "show_vendor": false,
-        "show_rating": false,
-        "show_quick_buy": true,
-        "enable_quick_view": true,
-        "enable_color_swatches": true,
-        "enable_countdown": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "square",
+        "apply_overlay": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -278,7 +295,7 @@
   },
   "order": [
     "slideshow",
-    "featured_collection_cJy3BM",
+    "collection_list_3KyC47",
     "rich_text_3khAPh",
     "image_comparison_UqcJHW",
     "guarantees_zqJ7Jx"
