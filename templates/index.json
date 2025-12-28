@@ -220,7 +220,7 @@
             "custom_icon": "",
             "title": "Garantie",
             "title_size": "h3",
-            "text": "<p>We kiezen elk product met zorg, met focus op kwaliteit en comfort. Gemaakt om dagelijks te dragen en lang mee te gaan</p>"
+            "text": "<p>Nous sélectionnons chaque produit avec soin, en mettant l’accent sur la qualité et le confort. Conçus pour être portés au quotidien et durer dans le temps<br/><br/></p>"
           }
         },
         "guarantee_XgLtnX": {
@@ -232,7 +232,7 @@
             "custom_icon": "",
             "title": "Gratis verzending",
             "title_size": "h3",
-            "text": "<p>Geen verrassingen bij het afrekenen. Bij Avaraya profiteer je altijd van gratis verzending</p>"
+            "text": "<p><strong>Aucune surprise au moment du paiement. Chez ÉLVARO, la livraison est toujours gratuite.</strong></p><h3></h3>"
           }
         },
         "guarantee_DgC6F9": {
@@ -244,7 +244,7 @@
             "custom_icon": "",
             "title": "Snelle klantenservice",
             "title_size": "h3",
-            "text": "<p>Heb je een vraag of hulp nodig? Ons team staat voor je klaar en reageert meestal binnen 24 uur.<br/><br/></p>"
+            "text": "<p><strong>Une question ou besoin d’aide ? Notre équipe est là pour vous et répond généralement sous 24 heures.</strong></p><h3></h3>"
           }
         }
       },
@@ -261,7 +261,7 @@
         "full_width": false,
         "show_divider": false,
         "columns_desktop": 4,
-        "heading": "Guarantees",
+        "heading": "Garanties",
         "heading_size": "h1",
         "heading_tag": "h2",
         "columns_mobile": "1",
