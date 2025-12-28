@@ -21,12 +21,12 @@
             "text_box_position": "middle-center",
             "subheading": "",
             "subheading_size": "h5",
-            "heading": "Kleding die met je meegaat",
+            "heading": "Des vêtements faits pour vous accompagner",
             "heading_size": "h1",
             "heading_tag": "h2",
-            "text": "Comfortabele essentials met een tijdloze look, voor elke dag",
+            "text": "Des essentiels confortables au style intemporel, pour tous les jours",
             "text_size": "typeset",
-            "button_label": "Shop nu",
+            "button_label": "Achetez maintenant",
             "button_link": "",
             "button_size": "medium",
             "button_style_secondary": false
@@ -203,7 +203,7 @@
         "heading_size": "h2",
         "heading_alignment": "center",
         "heading_tag": "h2",
-        "colors_line": "#FFFFFF",
+        "colors_line": "#ffffff",
         "padding_top": 36,
         "padding_bottom": 36
       }
