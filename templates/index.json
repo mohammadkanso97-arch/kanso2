@@ -228,53 +228,6 @@
         "padding_bottom": 36
       }
     },
-    "collection_list_NzwJeE": {
-      "type": "collection-list",
-      "blocks": {
-        "featured_collection_U3dQNk": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "",
-            "image_position": "center center"
-          }
-        },
-        "featured_collection_ep3QNb": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "",
-            "image_position": "center center"
-          }
-        },
-        "featured_collection_BxJBm6": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "",
-            "image_position": "center center"
-          }
-        }
-      },
-      "block_order": [
-        "featured_collection_U3dQNk",
-        "featured_collection_ep3QNb",
-        "featured_collection_BxJBm6"
-      ],
-      "name": "t:sections.collection-list.presets.name",
-      "settings": {
-        "show_view_all": false,
-        "show_divider": false,
-        "columns_desktop": 3,
-        "heading": "Collections",
-        "heading_size": "h1",
-        "heading_alignment": "left",
-        "heading_tag": "h2",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "image_ratio": "square",
-        "apply_overlay": true,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "guarantees_zqJ7Jx": {
       "type": "guarantees",
       "blocks": {
@@ -341,6 +294,76 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "testimonials_x4EE7A": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_7J6WqF": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5",
+            "text": "<p>Les tailles sont parfaites et le style est élégant<br/><br/></p>",
+            "image": "shopify://shop_images/Male-Poses-Candid.webp",
+            "author": "Marc"
+          }
+        },
+        "testimonial_M44HRr": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5",
+            "text": "<p>Produit conforme aux photos, livraison rapide<br/><br/></p>",
+            "image": "shopify://shop_images/d4558609d9968e5ed871b65badb6259e.jpg",
+            "author": "Claire"
+          }
+        },
+        "testimonial_BwQFWU": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5",
+            "text": "<p>Une marque raffinée avec un vrai souci du détail<br/><br/></p>",
+            "image": "shopify://shop_images/75c6d758-ba5d-46b5-8592-28a899327216.jpg",
+            "author": "Émilie"
+          }
+        },
+        "testimonial_69jdHC": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5",
+            "text": "<p><br/>Expérience d’achat simple et agréable<br/><br/></p>",
+            "image": "shopify://shop_images/lovepik-studio-shot-of-a-beautiful-young-casual-woman-photo-image_352146811.jpg",
+            "author": "Lina"
+          }
+        },
+        "testimonial_aqV9eF": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5",
+            "text": "<p>Très belle qualité, les finitions sont vraiment soignées<br/><br/></p>",
+            "image": "shopify://shop_images/eco-friendly-sweaters.jpg",
+            "author": "Sophie"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_7J6WqF",
+        "testimonial_M44HRr",
+        "testimonial_BwQFWU",
+        "testimonial_69jdHC",
+        "testimonial_aqV9eF"
+      ],
+      "name": "t:sections.testimonials.presets.name",
+      "settings": {
+        "autorotate": false,
+        "autorotate_speed": 5,
+        "hide_images": false,
+        "show_divider": false,
+        "heading": "Testimonials",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "heading_tag": "h2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -348,7 +371,7 @@
     "collection_list_3KyC47",
     "rich_text_3khAPh",
     "image_comparison_UqcJHW",
-    "collection_list_NzwJeE",
-    "guarantees_zqJ7Jx"
+    "guarantees_zqJ7Jx",
+    "testimonials_x4EE7A"
   ]
 }
