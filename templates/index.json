@@ -87,7 +87,6 @@
           "type": "featured_collection",
           "settings": {
             "collection": "dames",
-            "image": "shopify://shop_images/i-want-image-that-show-the-women-clothes-with-a-perfect-and-attractive-view.png",
             "image_position": "center center"
           }
         },
@@ -95,7 +94,6 @@
           "type": "featured_collection",
           "settings": {
             "collection": "",
-            "image": "shopify://shop_images/want-image-that-show-the-men-clothes-with-a-perfect-and-attractive-view.png",
             "image_position": "center center"
           }
         },
@@ -103,7 +101,6 @@
           "type": "featured_collection",
           "settings": {
             "collection": "",
-            "image": "shopify://shop_images/want-image-that-show-the-women-and-men-clothes-with-a-perfect-and-attractive-view.png",
             "image_position": "center center"
           }
         }
@@ -154,7 +151,7 @@
         "button_V9aUn8": {
           "type": "button",
           "settings": {
-            "button_label": "Acheter maintenant",
+            "button_label": "shop nu",
             "button_link": "",
             "button_size": "medium",
             "button_style_secondary": false
@@ -240,7 +237,7 @@
             "custom_icon": "",
             "title": "Garantie",
             "title_size": "h3",
-            "text": "<p><strong>Nous sélectionnons chaque produit avec soin, en mettant l’accent sur la qualité et le confort. Conçus pour être portés au quotidien et durer dans le temps<br/><br/></strong></p>"
+            "text": "<p><strong>Nous sélectionnons chaque produit avec soin, en mettant l’accent sur la qualité et le confort. Conçus pour être portés au quotidien et durer dans le temps</strong></p>"
           }
         },
         "guarantee_XgLtnX": {
@@ -252,7 +249,7 @@
             "custom_icon": "",
             "title": "Livraison gratuite",
             "title_size": "h3",
-            "text": "<p><strong>Aucune surprise au moment du paiement. Chez ÉLVARO, la livraison est toujours gratuite.</strong></p><h3></h3>"
+            "text": "<p><strong>Aucune surprise au moment du paiement. Chez ÉLVARO, la livraison est toujours gratuite</strong></p>"
           }
         },
         "guarantee_DgC6F9": {
@@ -264,7 +261,7 @@
             "custom_icon": "",
             "title": "Service client rapide",
             "title_size": "h3",
-            "text": "<p><strong>Une question ou besoin d’aide ? Notre équipe est là pour vous et répond généralement sous 24 heures.</strong></p><h3></h3>"
+            "text": "<p><strong>Une question ou besoin d’aide ? Notre équipe est là pour vous et répond généralement sous 24 heures</strong></p>"
           }
         }
       },
