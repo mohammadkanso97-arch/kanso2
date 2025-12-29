@@ -86,7 +86,7 @@
         "featured_collection_6JrWet": {
           "type": "featured_collection",
           "settings": {
-            "collection": "dames",
+            "collection": "femmes",
             "image": "shopify://shop_images/i-want-image-that-show-the-women-clothes-with-a-perfect-and-attractive-view.png",
             "image_position": "center center"
           }
@@ -228,6 +228,53 @@
         "padding_bottom": 36
       }
     },
+    "collection_list_NzwJeE": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_U3dQNk": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "image_position": "center center"
+          }
+        },
+        "featured_collection_ep3QNb": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "image_position": "center center"
+          }
+        },
+        "featured_collection_BxJBm6": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "image_position": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_U3dQNk",
+        "featured_collection_ep3QNb",
+        "featured_collection_BxJBm6"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "show_view_all": false,
+        "show_divider": false,
+        "columns_desktop": 3,
+        "heading": "Collections",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "image_ratio": "square",
+        "apply_overlay": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "guarantees_zqJ7Jx": {
       "type": "guarantees",
       "blocks": {
@@ -301,6 +348,7 @@
     "collection_list_3KyC47",
     "rich_text_3khAPh",
     "image_comparison_UqcJHW",
+    "collection_list_NzwJeE",
     "guarantees_zqJ7Jx"
   ]
 }
