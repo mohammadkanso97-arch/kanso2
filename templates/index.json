@@ -95,6 +95,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "",
+            "image": "shopify://shop_images/want-image-that-show-the-men-clothes-with-a-perfect-and-attractive-view.png",
             "image_position": "center center"
           }
         },
@@ -102,6 +103,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "",
+            "image": "shopify://shop_images/want-image-that-show-the-women-and-men-clothes-with-a-perfect-and-attractive-view.png",
             "image_position": "center center"
           }
         }
